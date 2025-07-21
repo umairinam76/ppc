@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Prime Loop Clone</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <img src="logo.jfif" alt="The Prime Loop" class="logo" />
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+<nav class="nav-menu">
+  <a href="#tools">Our PPC Tools</a>
+  <a href="#case-studies">Case Studies</a>
+  <a href="#pricing">Pricing</a>
+  <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0sCiKOZVKrTjxomeBHJT4RVcR6eRwMGofl7rMGqBDRVEW_M6wgsZjyDyJfbII_4CW3hFi_FuVZ" target="_blank" class="btn btn-primary">Book a Call</a>
+</nav>
+
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="slider">
+      <div class="slides">
+        <img src="image1.jpg" alt="Slide 1" />
+        <img src="image2.jpg" alt="Slide 2" />
+        <img src="image3.jpg" alt="Slide 3" />
+      </div>
+    </div>
+  <div class="container hero-content">
+  <h1 class="typewriter-text">Scale Faster with Data-Driven Amazon PPC</h1>
+  <p class="fade-in-text">We don’t rely on hunches — we leverage real-time data from Amazon Ads to launch, optimize, and scale campaigns that actually convert.</p>
+  <div class="buttons fade-in-text">
+    <button class="btn btn-primary" onclick="showPopup('call')">Book a Call</button>
+    <button class="btn btn-secondary" onclick="showPopup('audit')">Request Audit</button>
+  </div>
+</div>
+  </section>
+
+  <section id="tools" class="feature">
+    <div class="container">
+      <h2>In the Lab</h2>
+      <p>Our internal dashboard pulls data directly from Amazon Ads API—fast, clean, real‑time analytics.</p>
+      <img src="dashboard.png" alt="Dashboard View" />
+    </div>
+  </section>
+
+  <section id="case-studies" class="showcase">
+    <div class="container">
+      <h2>Dashboard Visuals</h2>
+      <div class="grid">
+        <img src="chart1.png" alt="Chart 1" />
+        <img src="chart2.png" alt="Chart 2" />
+        <img src="chart3.jfif" alt="Chart 3" />
+      </div>
+      <div class="buttons">
+<a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0sCiKOZVKrTjxomeBHJT4RVcR6eRwMGofl7rMGqBDRVEW_M6wgsZjyDyJfbII_4CW3hFi_FuVZ" target="_blank" class="btn btn-primary">Book a Call</a>
+        <button class="btn btn-secondary" onclick="showPopup('audit')">Request Audit</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2>Simple, Scalable Pricing</h2>
+      <div class="plans">
+        <div class="plan"><h3>Established Brands</h3><p>Flat monthly fee based on ad spend.</p></div>
+        <div class="plan"><h3>Growing Brands</h3><p>Percentage‑based plan.</p></div>
+        <div class="plan"><h3>Referral Discounts</h3><p>10% off for referred clients.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="social">
+        <a href="#">LinkedIn</a> | <a href="#">YouTube</a> | <a href="#">Facebook</a>
+      </div>
+      <div class="links">
+        <a href="#">Excel Tools</a> · <a href="#">Privacy Policy</a> · <a href="#">Legal</a>
+      </div>
+    </div>
+  </footer>
+
+ <div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2 id="popup-title">Let’s Talk</h2>
+    <p class="popup-description" id="popup-description">
+      Book a free strategy call with our PPC specialists or request a personalized audit of your current campaigns.
+    </p>
+    <form class="popup-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Brand / Company" />
+      <textarea placeholder="What would you like to discuss?" rows="4" required></textarea>
+      <button type="submit" class="btn btn-primary">Submit Request</button>
+    </form>
+    <div class="popup-note">
+      ✅ 100% free consultation. No obligations.
+    </div>
+  </div>
+</div>
+
+
+  <script src="./script.js"></script>
+  <script>
+  document.querySelectorAll('.showcase .grid img').forEach((img, index) => {
+    img.style.animationDelay = `${index * 0.2}s`;
+  });
+</script>
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-menu').classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>
