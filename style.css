@@ -21,7 +21,7 @@ body {
 
 /* Header */
 .header {
-  background: rgba(10, 22, 46);
+  background: rgba(10, 22, 46,0.7);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   color: white;
@@ -63,7 +63,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #0073e6;
+  color:rgb(205, 153, 32);
 }
 
 nav .btn {
@@ -81,13 +81,13 @@ nav .btn {
 }
 
 .btn-primary {
-  background: #0073e6;
+  background: rgb(205, 153, 32);
   color: #fff;
   text-decoration: none;
 }
 
 .btn-primary:hover {
-  background: #005bb5;
+  background:rgba(10, 22, 46) ;
 }
 
 .btn-secondary {
@@ -106,8 +106,8 @@ nav .btn.btn-primary {
 }
 
 nav .btn.btn-primary:hover {
-  background: rgba(255, 255, 255, 1);
-  color: #000;
+  background: rgb(205, 153, 32);
+  color: white;
   border-color: #000;
 }
 
