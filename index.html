@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Prime Loop Clone</title>
   <link rel="stylesheet" href="./style.css" />
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
 </head>
 <body>
   <header class="header">
@@ -41,13 +43,15 @@
 </div>
   </section>
 
-  <section id="tools" class="feature">
-    <div class="container">
-      <h2>In the Lab</h2>
-      <p>Our internal dashboard pulls data directly from Amazon Ads API—fast, clean, real‑time analytics.</p>
-      <img src="dashboard.png" alt="Dashboard View" />
-    </div>
-  </section>
+<section id="tools" class="expert-section">
+  <div class="yellow-circle float"></div>
+  <div class="container expert-content">
+    <h2>In the Lab</h2>
+    <p>Our internal dashboard pulls data directly from Amazon Ads API—fast, clean, real‑time analytics.</p>
+    <img src="dashboard.png" alt="Dashboard View" />
+  </div>
+</section>
+
 
   <section id="case-studies" class="showcase">
     <div class="container">
@@ -74,6 +78,31 @@
       </div>
     </div>
   </section>
+<section class="expert-section">
+  <div class="yellow-circle"></div>
+  <div class="container expert-content">
+    <h2>Talk to an Amazon Expert</h2><center>
+       <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <p class="popup-description" id="popup-description">
+      Book a free strategy call with our PPC specialists or request a personalized audit of your current campaigns.
+    </p>
+    <form class="popup-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Brand / Company" />
+      <textarea placeholder="What would you like to discuss?" rows="4" required></textarea>
+      <button type="submit" class="btn btn-primary">Submit Request</button>
+    </form>
+    <div class="popup-note">
+      ✅ 100% free consultation. No obligations.
+    </div>
+  </div>
+    </center>
+ 
+
+  </div>
+</section>
 
   <footer class="footer">
     <div class="container">
@@ -118,6 +147,7 @@
     document.querySelector('.nav-menu').classList.toggle('show');
   }
 </script>
+
 
 </body>
 </html>
