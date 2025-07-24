@@ -257,24 +257,230 @@ nav .btn.btn-primary:hover {
   width: 300px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
-
-/* Footer */
 .footer {
-  background: rgb(205, 153, 32);
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+  background: rgba(10, 22, 46, 0.95);
+  color: white;
+  padding: 40px 0 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.footer img{
+  margin-top: -40px;
+}
+/* submit button */
+#submit_btn{
+  background-color:rgb(205, 153, 32) ;
+}
+/* Grid layout for main footer */
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
 }
 
+/* Left side (logo + email form) */
+.footer-left {
+  flex: 1;
+  min-width: 240px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-form {
+  margin-top: 10px;
+}
+
+.footer-form .email-wrapper {
+  position: relative;
+  max-width: 300px;
+}
+
+.footer-form input[type="email"] {
+  width: 100%;
+  padding: 12px 48px 12px 14px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  outline: none;
+}
+
+.footer-form .arrow-button {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  background-color: #0a162e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-form .arrow-button:hover {
+  background-color: #333;
+}
+
+/* Center section */
+.footer-center {
+  flex: 2;
+  min-width: 260px;
+  color: white;
+}
+
+.footer-center h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-center p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Right columns */
+.footer-right {
+  flex: 1;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 260px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: white;
+}
+.logo-description {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  max-width: 280px;
+  font-size: 14px;
+  color: white;
+  line-height: 1.6;
+}
+.logo-description-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 15px;
+  max-width: 300px;
+}
+
+.footer-description {
+  font-size: 14px;
+  color: white;
+  line-height: 1.6;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: white;
+}
+
+/* Links */
 .footer a {
-  color: #cbd5e1;
+  color: white;
   text-decoration: none;
-  margin: 0 10px;
 }
 
 .footer a:hover {
   text-decoration: underline;
 }
+
+/* Divider line */
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 30px 0 15px;
+  width: 100%;
+}
+
+/* Bottom bar below divider */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 15px;
+}
+
+.footer-left-text,
+.footer-right-text {
+  color: white;
+}
+
+.footer-right-text a {
+  color:white;
+}
+
+/* Logo + Description Row */
+.logo-description-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.footer-description {
+  max-width: 220px;
+  font-size: 14px;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .logo-description-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-description {
+    max-width: 100%;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-form .email-wrapper {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 
 /* Popup */
 .popup {
@@ -346,6 +552,9 @@ nav .btn.btn-primary:hover {
   font-weight: bold;
   border-radius: 8px;
   margin-top: 10px;
+  background-color: rgb(205, 153, 32);
+  color: white;
+  border: none;
 }
 
 .popup-note {

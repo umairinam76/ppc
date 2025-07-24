@@ -46,9 +46,9 @@
 <section id="tools" class="expert-section">
   <div class="yellow-circle float"></div>
   <div class="container expert-content">
-    <h2>In the Lab</h2>
-    <p>Our internal dashboard pulls data directly from Amazon Ads API—fast, clean, real‑time analytics.</p>
-    <img src="dashboard.png" alt="Dashboard View" />
+    <h2>About Us</h2>
+  <p>At Prime Loop Digital, we specialize in data-driven Amazon PPC strategies that increase visibility and drive sales.</p>
+    <!-- <img src="dashboard.png" alt="Dashboard View" /> -->
   </div>
 </section>
 
@@ -103,16 +103,51 @@
   </div>
 </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="social">
-        <a href="#">LinkedIn</a> | <a href="#">YouTube</a> | <a href="#">Facebook</a>
+<footer class="footer">
+  <div class="container footer-grid">
+    <!-- Left Side: Logo + Description above Email -->
+    <div class="footer-left">
+      <div class="logo-description-row">
+        <img src="logo.png" alt="Logo" class="footer-logo" />
+        <p class="footer-description">
+          We’re a data-driven PPC agency focused on helping Amazon brands grow..
+        </p>
       </div>
-      <div class="links">
-        <a href="#">Excel Tools</a> · <a href="#">Privacy Policy</a> · <a href="#">Legal</a>
+      <form class="footer-form">
+        <div class="email-wrapper">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="arrow-button">&#10140;</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Right Side: Columns -->
+    <div class="footer-right">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <p>Our Story<br />Careers<br />Contact</p>
+      </div>
+      <div class="footer-column">
+        <h4>Social</h4>
+        <p>LinkedIn<br />YouTube<br />Facebook</p>
+      </div>
+      <div class="footer-column">
+        <h4>Docs</h4>
+        <p>Privacy Policy<br />Terms of Use<br />Legal</p>
       </div>
     </div>
-  </footer>
+  </div>
+
+  <hr class="footer-divider" style="border: 0.6px solid white;" />
+
+  <div class="footer-bottom">
+    <p class="footer-left-text">© All rights reserved</p>
+    <p class="footer-right-text"><a href="#">Terms & Conditions</a></p>
+  </div>
+</footer>
+
+
+
 
  <div id="popup" class="popup">
   <div class="popup-content">
@@ -126,7 +161,7 @@
       <input type="email" placeholder="Your Email" required />
       <input type="text" placeholder="Brand / Company" />
       <textarea placeholder="What would you like to discuss?" rows="4" required></textarea>
-      <button type="submit" class="btn btn-primary">Submit Request</button>
+      <button type="submit" class="btn btn-primary" id="submit_btn">Submit Request</button>
     </form>
    
   </div>
