@@ -69,7 +69,13 @@ nav a:hover {
 nav .btn {
   margin-left: 15px;
 }
-
+/* ABout */
+.about_desc{
+  text-align: center;
+  line-height: 2.3;
+  font-weight:500;
+  text-align:justify;
+}
 /* Buttons */
 .btn {
   padding: 10px 20px;
@@ -84,6 +90,117 @@ nav .btn {
   background: rgb(205, 153, 32);
   color: #fff;
   text-decoration: none;
+}
+/* Our Services Section */
+#tools .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+
+/* Horizontal Dropdown Plans */
+.dropdown-plans {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.dropdown-plan {
+  flex: 1 1 220px;
+  max-width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Button */
+.dropdown-btn {
+  width: 100%;
+  background: rgba(10, 22, 46);
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.dropdown-plan:nth-child(1) .dropdown-btn,
+.dropdown-plan:nth-child(3) .dropdown-btn {
+  background: rgb(205, 153, 32);
+}
+
+.dropdown-btn:hover {
+  opacity: 0.9;
+}
+
+/* Dropdown Content */
+/* Dropdown Content */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #f9f9f9;
+  padding: 0 20px;
+  transition: max-height 0.4s ease-out, padding 0.3s ease;
+}
+
+.dropdown-content.open {
+  max-height: 200px; /* Enough height for the content */
+  padding: 10px 20px;
+}
+
+
+
+
+
+.dropdown-content p {
+  margin: 10px 0;
+  padding: 10px 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+#tools .plan {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Colors for cards */
+#tools .plan:nth-child(1),
+#tools .plan:nth-child(3) {
+  background-color: rgb(205, 153, 32);
+}
+
+#tools .plan:nth-child(2),
+#tools .plan:nth-child(4) {
+  background-color: rgba(10, 22, 46);
+}
+
+/* Plan text adjustments */
+#tools .plan h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+#tools .plan p {
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .btn-primary:hover {
@@ -254,8 +371,11 @@ nav .btn.btn-primary:hover {
   background: #f1f5f9;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
+  width: 230px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.plan ul li{
+  text-decoration: none;
 }
 .footer {
   background: rgba(10, 22, 46, 0.95);
@@ -713,6 +833,14 @@ nav .btn.btn-primary:hover {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #0a162e;
+  position: relative;
+  z-index: 2;
+}
+.expert-sectionn h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 10px;
   color: #0a162e;
   position: relative;
   z-index: 2;
