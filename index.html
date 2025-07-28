@@ -106,7 +106,7 @@
 
         </div>
         <div class="plan">
-          <h3>Profit Planning Automation Tools Development</h3>
+<h3>Profit Planning Automation</h3>
           <hr>
           
        <p>Internal tools to automate campaign renaming, keyword segmentation, n-gram analysis, and more for efficient PPC management.</p>
@@ -290,27 +290,35 @@
     }
   </script>
 <script>
-  document.querySelectorAll(".dropdown-btn").forEach((btn) => {
+  document.querySelectorAll(".dropdown-btn").forEach((btn, index) => {
     btn.addEventListener("click", function () {
+      console.log(`🔽 Clicked dropdown #${index + 1}`);
+
       const content = this.nextElementSibling;
 
-      document.querySelectorAll(".dropdown-content").forEach((c) => {
+      // Close all other dropdowns
+      document.querySelectorAll(".dropdown-content").forEach((c, i) => {
         if (c !== content) {
+          console.log(`⛔ Closing dropdown #${i + 1}`);
           c.style.maxHeight = null;
           c.classList.remove("open");
         }
       });
 
+      // Toggle current dropdown
       if (content.classList.contains("open")) {
+        console.log(`🔒 Closing current dropdown #${index + 1}`);
         content.style.maxHeight = null;
         content.classList.remove("open");
       } else {
+        console.log(`✅ Opening dropdown #${index + 1}, scrollHeight: ${content.scrollHeight}px`);
         content.classList.add("open");
         content.style.maxHeight = content.scrollHeight + "px";
       }
     });
   });
 </script>
+
 
 
 

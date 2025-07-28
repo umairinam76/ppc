@@ -169,39 +169,52 @@ nav .btn {
 }
 
 #tools .plan {
-  padding: 20px;
+  background-color: rgb(205, 153, 32); /* Default color, overridden below */
+  padding: 25px 20px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  text-align: center;
+  text-align: left;
   color: #fff;
   font-weight: 500;
-  min-height: 220px;
+  min-height: 260px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
-/* Colors for cards */
 #tools .plan:nth-child(1),
 #tools .plan:nth-child(3) {
-  background-color: rgb(205, 153, 32);
+  background-color: rgb(205, 153, 32); /* Gold */
 }
 
 #tools .plan:nth-child(2),
 #tools .plan:nth-child(4) {
-  background-color: rgba(10, 22, 46);
+  background-color: rgba(10, 22, 46); /* Navy */
 }
 
-/* Plan text adjustments */
 #tools .plan h3 {
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
 
+#tools .plan hr {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border: none;
+  margin: 10px 0;
+  opacity: 0.3;
+}
+
 #tools .plan p {
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: #fff;
+  text-align:start;
+  /* text-emphasis: none; */
 }
+
 
 .btn-primary:hover {
   background:rgba(10, 22, 46) ;
@@ -353,11 +366,52 @@ nav .btn.btn-primary:hover {
 }
 
 /* Pricing Section */
+/* Pricing Plan Cards */
 .pricing {
   background: #fff;
   padding: 60px 0;
   text-align: center;
 }
+.pricing .plan {
+  /* background-color: rgba(10, 22, 46); */
+  /* color: #fff; */
+  padding: 25px 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); */
+  text-align: left;
+  width: 250px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Headings inside plan */
+.pricing .plan h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Paragraph inside plan */
+.pricing .plan p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Remove bullets and style list items */
+.pricing .plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing .plan ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 
 .plans {
   display: flex;
@@ -826,9 +880,16 @@ nav .btn.btn-primary:hover {
 }
 /* Apply floatCircle animation to yellow circle */
 .yellow-circle.float {
+    z-index: 0; /* Lower priority */
+
   animation: floatCircle 12s ease-in-out infinite;
 }
-
+.dropdown-plans,
+.dropdown-plan,
+.dropdown-btn {
+  position: relative;
+  z-index: 2; /* Must be higher than yellow-circle (0) */
+}
 .expert-section h2 {
   text-align: center;
   font-size: 2.5rem;
